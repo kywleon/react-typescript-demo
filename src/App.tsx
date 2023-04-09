@@ -2,8 +2,11 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Greet } from './components/Greet';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 function App() {
 
@@ -29,9 +32,17 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name={'Kwyleon'} messageCount={20} isLoggedIn={false}/>
+      {/* <Status status='loading'/>
+      <Heading>
+         Placeholder text
+      </Heading>
+      <Oscar>
+        <Heading>Oscar goes to Leonardo Dicpario!</Heading>
+      </Oscar>
+      <Greet name={'Kwyleon'} isLoggedIn={true}/> */}
+      {/* <Greet name={'Kwyleon'} messageCount={20} isLoggedIn={false}/>
       <Person name={personName}/>
-      <PersonList names={nameList}/>
+      <PersonList names={nameList}/> */}
     </div>
   );
 }
