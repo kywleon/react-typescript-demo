@@ -1,3 +1,5 @@
+/* Tutorial - 4 - Basic Props */
+
 type PersonProps = {
     name:{
         first: string,
