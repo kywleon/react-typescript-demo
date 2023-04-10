@@ -9,6 +9,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Input } from './components/Input';
+import { Container } from './components/Container';
 
 function App() {
 
@@ -34,11 +35,14 @@ function App() {
 
   return (
     <div className="App">
-      <Button handleClick={(event , id) => {
+
+      <Container styles={{ border: '1px solid black' , padding: '1rem'  }}/>
+      
+      {/* <Button handleClick={(event , id) => {
         console.log('Button Clicked' , event , id)
       }
       }/>
-      <Input value='' handleChange={event => console.log(event)} />
+      <Input value='' handleChange={event => console.log(event)} /> */}
 
       {/* <Status status='loading'/>
       <Heading>
