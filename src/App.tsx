@@ -11,9 +11,12 @@ import { Status } from './components/Status';
 import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { LoggedIn } from './state/LoggedIn';
-import { User } from './state/User';
+// import { User } from './state/User';
 import { Counter } from './state/Counter';
-
+import { ThemeContextProvider } from './context/ThemeContext';
+import { Box } from './context/Box';
+import { UserContextProvider } from './context/UserContext';
+import { User } from './context/User';
 
 function App() {
 
@@ -40,7 +43,14 @@ function App() {
   return (
     <div className="App">
 
-      <Counter />
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
+
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+      {/* <Counter /> */}
       {/* <User /> */}
       {/* <LoggedIn /> */}
       
