@@ -11,6 +11,9 @@ import { Status } from './components/Status';
 import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { LoggedIn } from './state/LoggedIn';
+import { User } from './state/User';
+import { Counter } from './state/Counter';
+
 
 function App() {
 
@@ -37,7 +40,10 @@ function App() {
   return (
     <div className="App">
 
-      <LoggedIn />
+      <Counter />
+      {/* <User /> */}
+      {/* <LoggedIn /> */}
+      
 
       {/* <Container styles={{ border: '1px solid black' , padding: '1rem'  }}/> */}
       
