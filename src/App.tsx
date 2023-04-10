@@ -10,6 +10,7 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Input } from './components/Input';
 import { Container } from './components/Container';
+import { LoggedIn } from './state/LoggedIn';
 
 function App() {
 
@@ -36,7 +37,9 @@ function App() {
   return (
     <div className="App">
 
-      <Container styles={{ border: '1px solid black' , padding: '1rem'  }}/>
+      <LoggedIn />
+
+      {/* <Container styles={{ border: '1px solid black' , padding: '1rem'  }}/> */}
       
       {/* <Button handleClick={(event , id) => {
         console.log('Button Clicked' , event , id)
