@@ -12,11 +12,16 @@ import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { LoggedIn } from './state/LoggedIn';
 // import { User } from './state/User';
-import { Counter } from './state/Counter';
+// import { Counter } from './state/Counter';
 import { ThemeContextProvider } from './context/ThemeContext';
 import { Box } from './context/Box';
 import { UserContextProvider } from './context/UserContext';
 import { User } from './context/User';
+import { DomRef } from './ref/DomRef';
+import { MutableRef } from './ref/MutableRef';
+import Counter from './class/Counter';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
 
@@ -42,10 +47,14 @@ function App() {
 
   return (
     <div className="App">
-
-      <UserContextProvider>
+      
+      <Private isLoggedIn={true} component={Profile}/>
+      {/* <Counter message='The count value is'/>  */}
+      {/* <DomRef />
+      <MutableRef /> */}
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
 
       {/* <ThemeContextProvider>
         <Box />
