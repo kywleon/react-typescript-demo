@@ -22,6 +22,8 @@ import { MutableRef } from './ref/MutableRef';
 import Counter from './class/Counter';
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
 
@@ -47,11 +49,21 @@ function App() {
 
   return (
     <div className="App">
+
+      <RandomNumber value={10} isPositive />
       
-      <Private isLoggedIn={true} component={Profile}/>
+      {/* <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={(item) => console.log(item)
+      }/>
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)
+      }/> */}
+
+      {/* <Private isLoggedIn={true} component={Profile}/> */}
+
       {/* <Counter message='The count value is'/>  */}
+
       {/* <DomRef />
       <MutableRef /> */}
+      
       {/* <UserContextProvider>
         <User />
       </UserContextProvider> */}
