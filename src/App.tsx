@@ -26,6 +26,8 @@ import { List } from './components/generics/List';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { CustomButton } from './components/html/Button';
+import { CustomComponent } from './components/html/CustomComponent';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
 
@@ -51,9 +53,22 @@ function App() {
 
   return (
     <div className="App">
-      <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
-        Primary Button
-      </CustomButton>
+
+      <Text as='h1' size='lg'>
+        Heading
+        </Text>
+      <Text as="p" size='md'>
+        Paragraph
+        </Text>
+      <Text as="label" htmlFor='someId' size='sm' color='secondary'>
+        Label
+      </Text>
+
+      {/* <CustomComponent name='kywleon' isLoggedIn={false}/> */}
+
+      {/* <CustomButton variant='primary' onClick={() => console.log('Clicked')}>
+       Primary Button
+      </CustomButton> */}
       {/* <Toast position='left-bottom' /> */}
       {/* <RandomNumber value={10} isPositive /> */}
       
